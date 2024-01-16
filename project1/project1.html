@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+    <a-scene inspector="" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+
+        <a-assets>
+            <img id="room" src="./img/360.jpg">
+            <img id="man" src="./img/man.jpg">
+            <img id="man2" src="./img/man2.jpg">
+        </a-assets>
+        
+        <a-text value="Work 2" position="0 1.75 -2.2"
+            animation="" >
+        </a-text>
+        
+        <a-text value="Peerapon Phokum" position="-0.60 1.5 -2.2"
+            animation="" >
+        </a-text>
+
+        <a-text value="643021113-0" position="-0.30 1.25 -2.2"
+            animation="" >
+        </a-text>
+
+        <a-sky color="#ECFFFF" src="#room" radius="40" material="" geometry="" scale=""></a-sky>
+        
+        <a-camera camera="" position="" rotation="" look-controls="" wasd-controls="">
+            <a-cursor material="" raycaster="" cursor="" geometry="" position=""></a-cursor>
+        </a-camera>
+
+        <a-box position="1 1 0" width="1" height="1"
+            animation="property: position; to: 0.75 1.5 -5; dur: 2000; easing: linear"
+            animation__2="property: rotation;; to: 0 360 0; dur: 5000; loop: true;" src="#man2" material=""
+            geometry="">
+        </a-box>
+
+        <a-box position="-9 0.5 -10" color="#FFC65D"
+            animation="property: position; to: 2 1 1; dur: 10000; easing: linear; loop: true;"
+            animation__2="property: rotation; to: 0 90 90; dur: 500; loop: true;" src="#man" material="" geometry="">
+        </a-box>
+
+        <a-box position="1 0.5 -10" color="#FFC65D"
+            animation="property: position; to: 2 1 1; dur: 10000; easing: linear; loop: true;"
+            animation__2="property: rotation; to: 0 90 90; dur: 500; loop: true;" src="#man" material="" geometry="">
+        </a-box>
+
+        <a-box position="10 0.5 -10" color="#FFC65D"
+            animation="property: position; to: 2 1 1; dur: 10000; easing: linear; loop: true;"
+            animation__2="property: rotation; to: 0 90 90; dur: 500; loop: true;" src="#man" material="" geometry="">
+        </a-box>
+
+        <!-- <canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" data-engine="three.js r158" width="1148"
+            height="885" style="">
+        </canvas> -->
+
+        <div class="a-loader-title" style="display: none;"></div>
+        <div class="a-enter-vr fullscreen" aframe-injected=""><button class="a-enter-vr-button"
+                title="Enter VR mode with a headset or fullscreen without" aframe-injected=""></button></div>
+        <div class="a-orientation-modal a-hidden" aframe-injected=""><button aframe-injected="">Exit VR</button></div>
+        <a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity><a-entity light="" position=""
+            data-aframe-default-light="" aframe-injected=""></a-entity>
+    </a-scene>
+
+</body>
+
+</html>
