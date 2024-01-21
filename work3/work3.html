@@ -19,8 +19,8 @@
         <v-card-title class="bg-deep-purple-accent-2">{{ title }}</v-card-title>
         <v-card-text class="pa-4">
           <template v-if="state==0">
-            <v-btn @click='shuffle()'>เริ่มเล่น</v-btn>
-            <v-btn class="ml-5" @click='goHome()'>กลับหน้าแรก</v-btn>
+            <v-btn @click='shuffle()'>start</v-btn>
+            <v-btn class="ml-5" @click='goHome()'>Back to profile</v-btn>
           </template>
           <template v-if="state==1">
             <v-row>
@@ -104,7 +104,7 @@
            }
         },
         goHome() {
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
         },
     },
 
