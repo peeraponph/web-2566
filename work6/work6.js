@@ -6,7 +6,7 @@ class App extends React.Component {
 
     title = (
         <Alert variant="info">
-            <b>Work6 :</b> Firebase
+            <b>Work6 :</b> React with Firebase
         </Alert>
     );
     footer = (
