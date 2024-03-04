@@ -13,7 +13,7 @@ class App extends React.Component {
         <div>
             By 643021113-0 Peerapon Phokum <br />
             College of Computing, Khon Kaen University <br />
-            <Button onClick={() => this.goBack()}>Back to Profile</Button>
+            <Button onClick={() => this.backProfile()}>Back to Profile</Button>
         </div>
     );
     state = {
@@ -28,7 +28,7 @@ class App extends React.Component {
         link: 'https://peerapon3014.github.io/web-2566/',
     }
 
-    goBack(){
+    backProfile(){
         window.location.href = this.state.link;
     }
 
