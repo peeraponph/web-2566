@@ -71,6 +71,9 @@
                         <v-btn @click="autoRead()">Auto Read (onSnapshot)</v-btn>
                         <v-btn @click="addData()">Add Data</v-btn>
                     </v-card-actions>
+                    <v-card-actions>
+                        <v-btn @click="backProfile()">Back to Profile</v-btn>
+                    </v-card-actions>
                 </v-card>
                 <v-card v-if="editmode">
                     <v-card-text class="pa-6">
@@ -172,6 +175,9 @@
                 addData() {
                     this.editmode = "เพิ่มนักเรียน";
                     this.editstd = {};
+                },
+                backProfile() {
+                    window.location.href = "https://peerapon3014.github.io/web-2566";
                 },
 
                 google_login() {
